@@ -3,16 +3,18 @@ package com.example.overloading;
 public class Oveloading {
     private String name;
     private String description;
-    public Oveloading(){
-        this("","");
+
+    public String elevatorPitch() {
+        return getName() + " : " + getDescription();
     }
 
-    public void elevatorPitch(){
-        return;
+    public Oveloading() {
+        this("Tamer", "Mansour");
     }
 
     public Oveloading(String name) {
         this.name = name;
+
     }
 
     public Oveloading(String name, String description) {
